@@ -1,1 +1,11 @@
-script: scripts/lint.sh
+matrix:
+  include:
+    - language: python
+      python: 2.7
+      script: flake8
+    - language: node_js
+      node_js: 7
+      script: eslint .
+
+notifications:
+  email: false
