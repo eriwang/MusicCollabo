@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#mainWindow {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: deepskyblue;
+    margin: 0 auto;
+}
+
+#uploadButton {
+    height: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
