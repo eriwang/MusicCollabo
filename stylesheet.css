@@ -10,7 +10,7 @@ body {
     width: 300px;
     height: 100px;
     background-color: deepskyblue;
-    margin: 0 auto;
+    margin: 0;
 }
 
 #uploadButton {
@@ -18,3 +18,13 @@ body {
     padding: 20px;
     margin: 0 auto;
 }
+
+#workspace {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+}
+
+
