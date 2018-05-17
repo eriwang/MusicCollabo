@@ -5,7 +5,7 @@ matrix:
       script: flake8
     - language: node_js
       node_js: 7
-      script: eslint .
+      script: eslint . && csslint static/*.css
 
 notifications:
   email: false
