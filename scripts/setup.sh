@@ -17,6 +17,5 @@ npm install
 
 # Git
 
-cp scripts/lint.sh .git/hooks/pre-commit
+echo 'set -e; scripts/lint_python.sh; scripts/lint_node.sh' > .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
-

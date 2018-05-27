@@ -2,10 +2,10 @@ matrix:
   include:
     - language: python
       python: 2.7
-      script: flake8
+      script: scripts/lint_python.sh
     - language: node_js
       node_js: 7
-      script: eslint . && csslint static/*.css
+      script: scripts/lint_node.sh
 
 notifications:
   email: false
