@@ -3,3 +3,4 @@
 set -e
 
 npx eslint .
+npx stylelint "static/**/*.css"
