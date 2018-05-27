@@ -3,11 +3,15 @@ matrix:
     - language: python
       python: 2.7
       script: scripts/lint_python.sh
+      cache:
+        directories: pip
     - language: node_js
       node_js: 7
       script: scripts/lint_node.sh
       cache:
         directories: node_modules
+      before_install:
+        - npm install -g npm@latest
 
 
 notifications:
