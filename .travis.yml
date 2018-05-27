@@ -10,8 +10,6 @@ matrix:
       script: scripts/lint_node.sh
       cache:
         directories: node_modules
-      before_install:
-        - npm install -g npm@latest
 
 notifications:
   email: false
