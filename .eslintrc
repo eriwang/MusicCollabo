@@ -31,6 +31,9 @@
         "strict": ["error", "global"],
 
         "no-console": "off",
+
+        // typescript-eslint issues
+        "no-undef": "off",
         "no-unused-vars": "off"
     }
 }
