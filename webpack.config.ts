@@ -1,5 +1,10 @@
 import * as path from "path";
+
+import CopyWebpackPlugin from "copy-webpack-plugin";
 import * as webpack from "webpack";
+
+const distPath = path.resolve(__dirname, "dist");
+const staticPath = path.resolve(distPath, "static");
 
 const config: webpack.Configuration = {
 	entry: "./web_src/index.ts",
@@ -10,16 +15,25 @@ const config: webpack.Configuration = {
 			{
 				test: /\.ts$/,
 				use: "ts-loader"
-				// exclude: /node_modules/
 			}
 		]
 	},
 	resolve: {
 		extensions: [".ts"]
 	},
+	plugins: [
+		new CopyWebpackPlugin([
+		{
+			from: "web_src/index.html", to: distPath
+		},
+		{
+			from: "web_src/styles.css", to: staticPath
+		}
+		]),
+	],
 	output: {
 		filename: "bundle.js",
-		path: path.resolve(__dirname, "dist")
+		path: staticPath
 	}
 };
 
