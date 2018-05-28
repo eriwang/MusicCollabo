@@ -3,5 +3,5 @@
 set -e
 
 npx eslint .
-npx stylelint "static/**/*.css"
-npx htmlhint "templates/**/*.html"
+npx stylelint "web_src/**/*.css"
+npx htmlhint "web_src/**/*.html"
