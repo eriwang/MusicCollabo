@@ -1,7 +1,7 @@
 "use strict";
 
 function helloName(name: string) {
-	console.log(`Hello ${name}~`);
+    console.log(`Hello ${name}~`);
 }
 
 helloName("Orc");
