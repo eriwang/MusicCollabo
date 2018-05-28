@@ -2,6 +2,6 @@
 
 set -e
 
-npx eslint .
+npx eslint "web_src/**/*.ts" "webpack.config.ts"
 npx stylelint "web_src/**/*.css"
 npx htmlhint "web_src/**/*.html"
