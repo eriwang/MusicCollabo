@@ -19,6 +19,10 @@ Install development dependencies. From the root directory of the project, run `s
 
 This should only need to be run on first time setup and when dependencies are updated.
 
+# Run
+
+TODO
+
 # Continuous Integration
 
 We're using Travis CI to ensure all JS and Python code is linted (configs in the project root). Potentially more CI to come.
