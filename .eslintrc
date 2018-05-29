@@ -15,6 +15,8 @@
         "require": true
     },
 
+    "parser": "typescript-eslint-parser",
+
     "parserOptions": {
         "sourceType": "module"
     },
@@ -29,8 +31,12 @@
         "space-before-blocks": ["error", "always"],
         "spaced-comment": ["error", "always"],
         "strict": ["error", "global"],
+        "indent": ["error", 4],
 
         "no-console": "off",
+
+        // typescript-eslint issues
+        "no-undef": "off",
         "no-unused-vars": "off"
     }
 }
